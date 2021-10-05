@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.divineagro</groupId>
+  <artifactId>DivineAgroProject</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>DivineAgroProject</name>
+  <description>Root project</description>
+  
+  <modules>
+  	<module>DivineAgroCommon</module>
+  	<module>DivineAgroWebParent</module>
+  </modules>
+  
+</project>
