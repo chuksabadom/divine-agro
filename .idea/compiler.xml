@@ -12,16 +12,17 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DivineAgroBackEnd" target="15" />
-      <module name="DivineAgroCommon" target="1.5" />
-      <module name="DivineAgroFrontEnd" target="15" />
+      <module name="DivineAgroBackEnd" target="11" />
+      <module name="DivineAgroCommon" target="11" />
+      <module name="DivineAgroFrontEnd" target="11" />
       <module name="DivineAgroProject" target="1.5" />
-      <module name="DivineAgroWebParent" target="15" />
+      <module name="DivineAgroWebParent" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="DivineAgroBackEnd" options="-parameters" />
+      <module name="DivineAgroCommon" options="-parameters" />
       <module name="DivineAgroFrontEnd" options="-parameters" />
     </option>
   </component>
