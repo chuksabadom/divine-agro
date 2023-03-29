@@ -1,4 +1,4 @@
-package com.divineagro.admin.user;
+package com.divineagro.admin.user.export;
 
 import com.divineagro.common.entity.User;
 import com.lowagie.text.*;
@@ -6,7 +6,6 @@ import com.lowagie.text.Font;
 import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.PdfWriter;
-import org.springframework.security.core.parameters.P;
 
 import javax.servlet.http.HttpServletResponse;
 import java.awt.*;

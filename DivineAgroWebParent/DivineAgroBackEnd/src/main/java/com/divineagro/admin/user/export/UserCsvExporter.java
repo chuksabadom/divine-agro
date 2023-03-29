@@ -1,4 +1,4 @@
-package com.divineagro.admin.user;
+package com.divineagro.admin.user.export;
 
 import com.divineagro.common.entity.User;
 import org.supercsv.io.CsvBeanWriter;
