@@ -1,7 +1,8 @@
-package com.divineagro.admin.user;
+package com.divineagro.admin.user.controller;
 
 import com.divineagro.admin.FileUploadUtil;
 import com.divineagro.admin.security.DivineAgroUserDetails;
+import com.divineagro.admin.user.UserService;
 import com.divineagro.common.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -29,7 +30,7 @@ public class AccountController {
         User user = userService.getByEmail(email);
         model.addAttribute("user", user);
 
-        return "account_form";
+        return "users/account_form";
     }
 
     @PostMapping("account/update")

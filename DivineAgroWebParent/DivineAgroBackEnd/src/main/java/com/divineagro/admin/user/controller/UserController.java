@@ -1,6 +1,8 @@
-package com.divineagro.admin.user;
+package com.divineagro.admin.user.controller;
 
 import com.divineagro.admin.FileUploadUtil;
+import com.divineagro.admin.user.UserNotFoundException;
+import com.divineagro.admin.user.UserService;
 import com.divineagro.admin.user.export.UserCsvExporter;
 import com.divineagro.admin.user.export.UserExcelExporter;
 import com.divineagro.admin.user.export.UserPdfExporter;
@@ -60,7 +62,7 @@ public class UserController {
         model.addAttribute("reverseSortDir", reverseSortDir);
         model.addAttribute("keyword", keyword);
 
-        return "users";
+        return "users/users";
     }
     @GetMapping("/users/new")
     public String newUser(Model model) {
@@ -73,7 +75,7 @@ public class UserController {
         model.addAttribute("listRoles", listRoles);
         model.addAttribute("pageTitle", "Create New User");
 
-        return "user_form";
+        return "users/user_form";
     }
 
     @PostMapping("users/save")
@@ -112,7 +114,7 @@ public class UserController {
             model.addAttribute("listRoles", listRoles);
             model.addAttribute("pageTitle", "Edit User (ID: " + id + ")");
 
-            return "user_form";
+            return "users/user_form";
 
         } catch (UserNotFoundException exception) {
             redirectAttributes.addFlashAttribute("message", exception.getMessage());
